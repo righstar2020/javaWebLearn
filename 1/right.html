@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            overflow-x: hidden;
+            background-color: #fefefe;
+        }
+        
+        .contentRight {
+            width: 100%;
+            height: auto;
+        }
+        
+        .contentRight .webTitle {
+            text-align: center;
+            line-height: 100%;
+            font-size: 20px;
+            width: 100%;
+            margin: 10px;
+        }
+        
+        .contentRight .imageList {
+            width: 100%;
+            position: relative;
+        }
+        
+        @keyframes boxAni {
+            from {
+                box-shadow: 0 0 0 0px #fff;
+            }
+            to {
+                box-shadow: 0 0 0 1px gainsboro;
+            }
+        }
+        
+        .imageList .box {
+            width: 24%;
+            height: 200px;
+            border-radius: 3px;
+            margin: 5px 5;
+            float: left;
+        }
+        
+        .imageList .box .image {
+            width: 100%;
+            height: 100%;
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .imageList .box .imageTime {
+            width: 100%;
+            height: 20%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contentRight">
+        <div class="webTitle">欢迎访问99图片资源网</div>
+
+        <div class="imageList" id="imageList">
+
+
+
+
+        </div>
+
+    </div>
+
+</body>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</script>
+
+<script>
+    var imageList = document.getElementById("imageList");
+    for (let i = 0; i < 30; i++)
+        setTimeout(getImage, i * 800, i)
+
+    function getImage(i) {
+
+        var url = "https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture&n=" + i;
+        var html = "<div class='box'>" +
+            "<div class = 'image'>" +
+            "<a href='#' class='thumbnail'>" +
+            "<img src = '" + url + "'  onerror='" + url + "&e=" + i + "' >" +
+            "</a>" +
+            "</div>" +
+            "</div>"
+
+
+        imageList.innerHTML += html
+    }
+</script>
+
+</html>

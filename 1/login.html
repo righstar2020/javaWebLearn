@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            position: relative;
+            background-color: #fefef3;
+            background-image: url("bak8.jpg");
+            background-size: 100% 100%;
+        }
+        
+        .loginBox {
+            width: 22%;
+            border: 1px solid #ccc;
+            background-color: #eef;
+            padding: 10px;
+            position: absolute;
+            right: 10%;
+            top: 30%;
+        }
+        
+        .loginBox .title {
+            width: 100%;
+            padding: 0;
+            text-align: center;
+        }
+        
+        .loginBox input {
+            margin: 0;
+        }
+    </style>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="loginBox">
+        <div class="title">登录网站</div>
+        <div class="form-group">
+            <label>账号</label>
+            <input type="text" class="form-control" id="userName" placeholder="输入账号">
+        </div>
+        <div class="form-group">
+            <label>密码</label>
+            <input type="password" class="form-control" id="password" placeholder="输入密码">
+        </div>
+
+        <button class="btn  btn-success" onclick="login()">登录</button>
+        <button class="btn btn-primary" onclick="toSign()">注册</button>
+    </div>
+</body>
+
+<script src="./main.js">
+</script>
+
+</html>
