@@ -73,7 +73,7 @@
             margin: 15px 28px;
         }
         
-        .container .registerForm {
+        .container .loginForm {
             width: 80%;
             height: auto;
             border: 1px dotted #0e0e0e;
@@ -84,7 +84,7 @@
             position: relative;
         }
         
-        .registerForm .title {
+        .loginForm .title {
             font-size: 12px;
             padding: 2px;
             color: #fff;
@@ -97,7 +97,7 @@
             justify-content: center;
         }
         
-        .registerForm span {
+        .loginForm span {
             margin: 10px;
             color: #000;
             display: flex;
@@ -106,21 +106,21 @@
             flex-wrap: nowrap;
         }
         
-        .registerForm span div {
+        .loginForm span div {
             font-size: 12px;
             width: 50px;
             padding: 0 5px;
             text-align: right;
         }
         
-        .registerForm div {
+        .loginForm div {
             width: 100%;
             font-size: 12px;
             padding-left: 50px;
             display: flex;
         }
         
-        .registerForm .registerBtn {
+        .loginForm .loginBtn {
             background-color: darkgoldenrod;
             border: none;
             border-radius: 5px;
@@ -138,7 +138,7 @@
         <div class="container">
             <div class="d1">用户登录</div>
             <div class="d2">欢迎登录</div>
-            <form class="registerForm" action="checkLogin.jsp">
+            <form class="loginForm" action="checkLogin.jsp">
                 <div class="title">登录</div>
                 <span>用户名: <%=userName%></span>
                 <span>密码:<%=password%></span>
