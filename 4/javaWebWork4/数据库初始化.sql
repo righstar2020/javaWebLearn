@@ -10,4 +10,4 @@ create table user_table
     phone varchar(20),
     address varchar(255),
     primary key(id)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+)ENGINE=InnoDB DEFAULT CHARSET=utf8 ;
